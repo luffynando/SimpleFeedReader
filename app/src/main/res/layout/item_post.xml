@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    card_view:cardCornerRadius="4dp"
+    card_view:cardUseCompatPadding="true">
+
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/info"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/miniatura_post"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/altura_miniatura_post"
+            android:layout_alignParentTop="true"
+            android:background="@color/cardview_light_background"
+            android:src="@drawable/ic_background_image" />
+
+        <TextView
+            android:id="@+id/titulo_post"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/miniatura_post"
+            android:padding="8dp"
+            android:text="@string/title"
+            android:textAlignment="center"
+            android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/categorias_post"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/titulo_post"
+            android:layout_marginBottom="8dp"
+            android:layout_marginStart="8dp"
+            android:text="@string/categorias"
+            android:visibility="visible" />
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>
